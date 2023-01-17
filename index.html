@@ -10,6 +10,9 @@
     /* The switch - the box around the slider */
     .switch {
       position: relative;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       display: inline-block;
       width: 60px;
       height: 34px;
@@ -48,11 +51,11 @@
     }
 
     input:checked + .slider {
-      background-color: #2196f3;
+      background-color: #21273d;
     }
 
     input:focus + .slider {
-      box-shadow: 0 0 1px #2196f3;
+      box-shadow: 0 0 1px #21273d;
     }
 
     input:checked + .slider:before {
@@ -78,15 +81,13 @@
       <span class="slider round"></span>
     </label>
     <br />
-    <!-- <img src="imageupd1.PNG" id="getImage" height="255" /> -->
 
     <!-- image 1 -->
     <img
       src="http://glasstronn.com/wp-content/uploads/2023/01/IMG-20230112-WA0020-300x150.jpg"
-      onclick="swapImages()"
       id="getImage"
       height="255"
-      width="100%"
+      background-size="cover"
     />
   </body>
   <script>
