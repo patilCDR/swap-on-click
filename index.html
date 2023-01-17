@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <input type="button" onclick="swapImages()" value="Swap Image" /> -->
+    <label class="switch">
+      <input type="checkbox" onclick="swapImages()" value="Swap Image" />
+      <span class="slider round"></span>
+    </label>
+    <br />
+    <!-- <img src="imageupd1.PNG" id="getImage" height="255" /> -->
+
+    <img
+      src="https://images.pexels.com/photos/12753880/pexels-photo-12753880.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+      onclick="swapImages()"
+      id="getImage"
+      height="255"
+      width="355"
+    />
+  </body>
+  <script>
+    function swapImages() {
+      var get = document.getElementById("getImage");
+      if (
+        get.src.includes(
+          "https://images.pexels.com/photos/12753880/pexels-photo-12753880.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+        )
+      ) {
+        get.src =
+          "https://images.pexels.com/photos/6633071/pexels-photo-6633071.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load";
+      } else {
+        get.src =
+          "https://images.pexels.com/photos/12753880/pexels-photo-12753880.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load";
+      }
+    }
+  </script>
+</html>
